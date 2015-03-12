@@ -185,6 +185,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(730,70)" to="(840,70)"/>
     <wire from="(330,50)" to="(370,50)"/>
     <wire from="(330,490)" to="(370,490)"/>
+    <wire from="(780,290)" to="(830,290)"/>
     <wire from="(250,120)" to="(250,160)"/>
     <wire from="(740,420)" to="(840,420)"/>
     <wire from="(740,210)" to="(740,260)"/>
@@ -214,18 +215,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(680,320)" to="(690,320)"/>
     <wire from="(590,180)" to="(590,220)"/>
     <wire from="(170,900)" to="(860,900)"/>
-    <wire from="(250,870)" to="(360,870)"/>
     <wire from="(400,390)" to="(740,390)"/>
     <wire from="(890,290)" to="(920,290)"/>
     <wire from="(250,440)" to="(250,510)"/>
     <wire from="(670,50)" to="(670,190)"/>
     <wire from="(460,500)" to="(460,510)"/>
+    <wire from="(780,290)" to="(780,390)"/>
     <wire from="(330,150)" to="(370,150)"/>
     <wire from="(350,170)" to="(370,170)"/>
     <wire from="(400,700)" to="(620,700)"/>
     <wire from="(450,780)" to="(450,790)"/>
     <wire from="(880,380)" to="(890,380)"/>
     <wire from="(540,200)" to="(630,200)"/>
+    <wire from="(830,230)" to="(840,230)"/>
     <wire from="(480,210)" to="(510,210)"/>
     <wire from="(250,560)" to="(250,870)"/>
     <wire from="(410,60)" to="(830,60)"/>
@@ -236,17 +238,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(250,120)" to="(280,120)"/>
     <wire from="(780,140)" to="(780,180)"/>
     <wire from="(890,290)" to="(890,380)"/>
+    <wire from="(460,860)" to="(920,860)"/>
+    <wire from="(250,870)" to="(420,870)"/>
     <wire from="(90,440)" to="(180,440)"/>
     <wire from="(830,530)" to="(830,720)"/>
     <wire from="(500,780)" to="(560,780)"/>
     <wire from="(330,750)" to="(390,750)"/>
     <wire from="(250,510)" to="(250,560)"/>
+    <wire from="(330,850)" to="(420,850)"/>
     <wire from="(330,100)" to="(370,100)"/>
     <wire from="(740,390)" to="(740,420)"/>
     <wire from="(910,230)" to="(920,230)"/>
     <wire from="(410,800)" to="(460,800)"/>
+    <wire from="(830,230)" to="(830,290)"/>
     <wire from="(250,300)" to="(250,350)"/>
-    <wire from="(780,290)" to="(780,380)"/>
     <wire from="(460,550)" to="(480,550)"/>
     <wire from="(250,350)" to="(370,350)"/>
     <wire from="(800,460)" to="(840,460)"/>
@@ -272,7 +277,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(450,790)" to="(460,790)"/>
     <wire from="(330,580)" to="(390,580)"/>
     <wire from="(250,160)" to="(250,200)"/>
-    <wire from="(780,380)" to="(780,390)"/>
     <wire from="(820,240)" to="(840,240)"/>
     <wire from="(630,320)" to="(640,320)"/>
     <wire from="(830,220)" to="(840,220)"/>
@@ -309,13 +313,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(910,220)" to="(920,220)"/>
     <wire from="(650,240)" to="(770,240)"/>
     <wire from="(440,210)" to="(450,210)"/>
-    <wire from="(780,380)" to="(840,380)"/>
     <wire from="(810,520)" to="(840,520)"/>
     <wire from="(330,490)" to="(330,540)"/>
     <wire from="(760,340)" to="(760,400)"/>
     <wire from="(790,230)" to="(790,270)"/>
-    <wire from="(400,860)" to="(920,860)"/>
-    <wire from="(330,850)" to="(360,850)"/>
     <wire from="(250,560)" to="(370,560)"/>
     <wire from="(800,460)" to="(800,550)"/>
     <wire from="(120,70)" to="(330,70)"/>
@@ -404,6 +405,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Switch (S)"/>
     </comp>
     <comp lib="3" loc="(410,60)" name="Shifter">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(460,860)" name="Comparator">
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(120,160)" name="Pin">
@@ -599,9 +603,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="3" loc="(400,860)" name="Comparator">
-      <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(410,160)" name="Shifter">
       <a name="width" val="32"/>
