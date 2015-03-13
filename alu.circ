@@ -244,12 +244,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(740,420)" to="(840,420)"/>
     <wire from="(740,210)" to="(740,260)"/>
     <wire from="(690,270)" to="(690,320)"/>
+    <wire from="(570,710)" to="(620,710)"/>
     <wire from="(870,60)" to="(930,60)"/>
     <wire from="(330,50)" to="(330,70)"/>
     <wire from="(1030,680)" to="(1070,680)"/>
     <wire from="(860,620)" to="(860,690)"/>
     <wire from="(520,500)" to="(790,500)"/>
-    <wire from="(620,710)" to="(620,770)"/>
     <wire from="(540,260)" to="(740,260)"/>
     <wire from="(680,320)" to="(690,320)"/>
     <wire from="(170,900)" to="(860,900)"/>
@@ -263,6 +263,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(880,380)" to="(890,380)"/>
     <wire from="(540,200)" to="(630,200)"/>
     <wire from="(480,210)" to="(510,210)"/>
+    <wire from="(570,710)" to="(570,770)"/>
     <wire from="(250,560)" to="(250,870)"/>
     <wire from="(410,60)" to="(830,60)"/>
     <wire from="(580,290)" to="(780,290)"/>
@@ -317,7 +318,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(790,230)" to="(790,270)"/>
     <wire from="(120,70)" to="(330,70)"/>
     <wire from="(760,410)" to="(840,410)"/>
-    <wire from="(570,770)" to="(620,770)"/>
     <wire from="(330,260)" to="(430,260)"/>
     <wire from="(370,210)" to="(400,210)"/>
     <wire from="(630,300)" to="(630,310)"/>
@@ -430,6 +430,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="fanout" val="1"/>
       <a name="incoming" val="32"/>
       <a name="appear" val="right"/>
+      <a name="bit0" val="none"/>
       <a name="bit1" val="0"/>
       <a name="bit2" val="0"/>
       <a name="bit3" val="0"/>
@@ -460,7 +461,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit28" val="0"/>
       <a name="bit29" val="0"/>
       <a name="bit30" val="0"/>
-      <a name="bit31" val="none"/>
+      <a name="bit31" val="0"/>
     </comp>
     <comp lib="0" loc="(950,670)" name="Constant">
       <a name="width" val="5"/>
