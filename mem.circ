@@ -52,8 +52,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </options>
   <mappings>
     <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
     <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
   </mappings>
   <toolbar>
     <tool lib="6" name="Poke Tool"/>
@@ -76,7 +76,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="16"/>
       <a name="labelloc" val="east"/>
     </tool>
-    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="NOT Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="20"/>
+    </tool>
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
@@ -85,12 +88,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(250,540)" to="(250,550)"/>
-    <wire from="(190,280)" to="(200,280)"/>
-    <wire from="(190,180)" to="(200,180)"/>
+    <wire from="(570,180)" to="(780,180)"/>
+    <wire from="(250,540)" to="(470,540)"/>
+    <wire from="(190,180)" to="(210,180)"/>
+    <wire from="(540,120)" to="(540,270)"/>
+    <wire from="(190,280)" to="(320,280)"/>
+    <wire from="(320,110)" to="(530,110)"/>
+    <wire from="(230,180)" to="(380,180)"/>
+    <wire from="(320,110)" to="(320,280)"/>
     <wire from="(190,350)" to="(200,350)"/>
-    <wire from="(770,180)" to="(780,180)"/>
-    <wire from="(450,540)" to="(450,550)"/>
+    <wire from="(470,270)" to="(540,270)"/>
+    <wire from="(250,540)" to="(250,550)"/>
+    <wire from="(550,110)" to="(570,110)"/>
+    <wire from="(450,220)" to="(450,550)"/>
+    <wire from="(570,110)" to="(570,180)"/>
+    <wire from="(470,260)" to="(470,270)"/>
+    <wire from="(520,180)" to="(570,180)"/>
+    <wire from="(470,220)" to="(470,240)"/>
+    <wire from="(470,270)" to="(470,540)"/>
+    <wire from="(430,220)" to="(430,240)"/>
     <comp lib="0" loc="(780,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -98,33 +114,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Data Mem Out"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(190,350)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="ACCESS_BYTE"/>
-    </comp>
-    <comp lib="6" loc="(435,19)" name="Text">
-      <a name="text" val="DO NOT CHANGE THE LOCATIONS OF THE INPUTS/OUTPUTS! IF YOU DO SO, YOU NEED TO MAKE SURE THE PINS ARE AT THE RIGHT PLACE!"/>
-    </comp>
-    <comp lib="0" loc="(190,280)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Data Mem In"/>
-    </comp>
     <comp lib="0" loc="(190,180)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Data Mem Addr"/>
     </comp>
-    <comp lib="0" loc="(450,550)" name="Pin">
+    <comp lib="1" loc="(470,240)" name="NOT Gate">
       <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLOCK"/>
+      <a name="size" val="20"/>
     </comp>
     <comp lib="6" loc="(103,130)" name="Text">
       <a name="text" val="These are INPUTS to the circuit"/>
     </comp>
     <comp lib="6" loc="(339,599)" name="Text">
       <a name="text" val="These are INPUTS to the circuit"/>
+    </comp>
+    <comp lib="0" loc="(430,240)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(496,586)" name="Text">
+      <a name="text" val="Yet again, the clock is not an actual clock, but an input, one that will be driven from a higher circuit"/>
+    </comp>
+    <comp lib="6" loc="(435,19)" name="Text">
+      <a name="text" val="DO NOT CHANGE THE LOCATIONS OF THE INPUTS/OUTPUTS! IF YOU DO SO, YOU NEED TO MAKE SURE THE PINS ARE AT THE RIGHT PLACE!"/>
+    </comp>
+    <comp lib="0" loc="(450,550)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLOCK"/>
+    </comp>
+    <comp lib="1" loc="(550,110)" name="Controlled Buffer">
+      <a name="width" val="32"/>
     </comp>
     <comp lib="6" loc="(853,129)" name="Text">
       <a name="text" val="This is an OUTPUT to the circuit"/>
@@ -134,8 +154,55 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="MEM_WRITE"/>
     </comp>
-    <comp lib="6" loc="(496,586)" name="Text">
-      <a name="text" val="Yet again, the clock is not an actual clock, but an input, one that will be driven from a higher circuit"/>
+    <comp lib="4" loc="(520,180)" name="RAM">
+      <a name="addrWidth" val="24"/>
+      <a name="dataWidth" val="32"/>
+    </comp>
+    <comp lib="0" loc="(190,350)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="ACCESS_BYTE"/>
+    </comp>
+    <comp lib="0" loc="(190,280)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Data Mem In"/>
+    </comp>
+    <comp lib="0" loc="(210,180)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="none"/>
+      <a name="bit27" val="none"/>
+      <a name="bit28" val="none"/>
+      <a name="bit29" val="none"/>
+      <a name="bit30" val="none"/>
+      <a name="bit31" val="none"/>
     </comp>
   </circuit>
 </project>
