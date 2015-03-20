@@ -7,10 +7,11 @@ LfsrPalindrome:
 loop:
 	lfsr $t1, $t1
 	bitpal $t3, $t1
-	beq $t2, $t3, palindrone
+	beq $t2, $t3, palindrome
 	beq $t1, $t0, end
+	j loop
 
-palindrone:
+palindrome:
 	add $v0, $t1, $0
 	j loop
 
