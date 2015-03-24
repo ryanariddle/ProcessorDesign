@@ -2,7 +2,6 @@ LfsrPalindrome:
 	add $t0, $a0, $0
 	add $t1, $a0, $0
 	addiu $t2, $0, 1
-	add $v0, $a0, $0
 
 loop:
 	lfsr $t1, $t1
@@ -13,7 +12,8 @@ loop:
 
 palindrome:
 	add $v0, $t1, $0
-	j loop
+	jr $ra
 
 end:
+	add $v0, $t0, $0
 	jr $ra
